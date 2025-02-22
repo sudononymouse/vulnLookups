@@ -6,6 +6,7 @@
 {
   # Set the ACME DNS challenge provider to use Cloudflare for all sites
   acme_dns cloudflare {env.CLOUDFLARE_ZONE_READ_N_WRITE}
+  resolvers 1.1.1.1, 1.0.0.1
 }
 
 finnsbin.win {
